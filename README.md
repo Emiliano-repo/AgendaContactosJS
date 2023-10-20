@@ -10,7 +10,7 @@
 ## 🔧📱🗒️:hammer:Funcionalidades del proyecto
 - `Funcionalidad 1`: Se realiza una agenda de Contactos para clientes. 
 - `Funcionalidad 2`: Se pueden ver y añadir contactos nuevos.
-- `Funcionalidad 3`: Los cotactos persisten en localstorege.
+- `Funcionalidad 3`: Los contactos persisten en localstorage.
   
 \## 💻📱 📡 Tecnologías Utilizadas : 
 
