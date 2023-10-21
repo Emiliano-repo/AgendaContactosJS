@@ -58,7 +58,7 @@ border-bottom: 1px solid dodgerblue;
             color: white;
 
 }
-.listado-contactos{
+.listado-tareas{
             display:flex;
             flex-direction: column ;
 }

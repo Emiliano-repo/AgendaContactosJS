@@ -1,14 +1,13 @@
-const guardarContacto = (db,contacto) => {
+const guardarContacto = (db, contacto) => {
   
   db.setItem(contacto.id, JSON.stringify(contacto))
- 
-  windows.location.href = '/'
+ window.location.href = '/'
 }
 
-// funcion Agregar contactos
-const cargarContactos = (db,parentNode) => {
-  let claves = Object.keys(db);
 
+const cargarContactos = (db,parentNode) => {
+  let claves = Object.keys(db)
+console.log(claves)
   for (clave of claves) {
     let contacto = JSON.parse(db.getItem(clave))
     crearContacto(parentNode,contacto,db)
@@ -30,11 +29,11 @@ direccionContacto.innerHTML = contacto.direccion
 iconoBorrar.innerHTML='delate_forever'
 
 
-divContacto.classList.add('tareas')
+divContacto.classList.add('tarea')
+iconoBorrar.classList.add('material-icons','icono')
 
 iconoBorrar.onclick=()=>{
 db.removeItem(contacto.id)
-
 window.location.href='/'
 }
 
